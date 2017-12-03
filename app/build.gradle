@@ -4,11 +4,11 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
     defaultConfig {
-        applicationId "ai.elimu.launcher_custom"
+        applicationId "ai.elimu.launcher_custom_literacy"
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 1001005
-        versionName "1.1.5"
+        versionCode 1004001
+        versionName "1.4.1"
     }
 
     productFlavors {
@@ -20,6 +20,11 @@ android {
         no {
             applicationIdSuffix ".no"
             versionNameSuffix "-no"
+        }
+
+        pt {
+            applicationIdSuffix ".pt"
+            versionNameSuffix "-pt"
         }
 
         so {

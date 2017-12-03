@@ -55,7 +55,10 @@ public class HomeScreensActivity extends AppCompatActivity {
             appCollection = AppCollectionGenerator.loadAppCollectionNorwegian();
         } else if ("so".equals(BuildConfig.FLAVOR)) {
             appCollection = AppCollectionGenerator.loadAppCollectionSomali();
+        } else if ("pt".equals(BuildConfig.FLAVOR)) {
+            appCollection = AppCollectionGenerator.loadAppCollectionPortuguese();
         }
+
         Log.i(getClass().getName(), "appCollection.getAppCategories().size(): " + appCollection.getAppCategories().size());
 
         setContentView(ai.elimu.launcher_custom.R.layout.activity_home_screens);
